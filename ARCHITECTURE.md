@@ -4,7 +4,7 @@
 
 - React owns menus, options, HUD shell, pause dialog, result screen, and the query cache.
 - `GameSimulation` is a frame-rate-independent gameplay state machine. It owns entities, timers, cooldowns, collision checks, scoring, and end reasons. A configuration snapshot is copied into each simulation.
-- `GameCanvas` owns one Pixi application and translates keyboard and touch input into the simulation. It uses a fixed logical arena of 1000x620 and Pixi's `autoDensity`/device-pixel resolution for high-DPI screens.
+- `GameCanvas` owns one Pixi application and translates keyboard and touch input into the simulation. It uses a fixed logical arena of 1000x620 and Pixi's `autoDensity`/device-pixel resolution for high-DPI screens. Runtime textures are served from `public/assets/`, which Vite copies to the same `/assets/...` URLs in the production bundle.
 - Axios is the only HTTP client. TanStack Query owns cache, loading/error states, retries, invalidation, and refetch-on-focus. MSW intercepts the same `/api` contracts in development and production.
 
 ## Combat and lifecycle

@@ -56,7 +56,7 @@ npm run build
 npm run preview
 ```
 
-The generated static files are written to `dist/`.
+The generated static files are written to `dist/`. Runtime images and other static resources are stored under `public/assets/` so Vite copies them to the published `/assets/...` paths.
 
 ## Controls
 
