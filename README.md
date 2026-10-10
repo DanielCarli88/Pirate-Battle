@@ -117,37 +117,6 @@ To intentionally regenerate visual baselines:
 npm run test:e2e -- --update-snapshots
 ```
 
-## Deploying to Vercel
-
-This is a static Vite application and does not require a backend or environment variables.
-
-### Vercel dashboard
-
-1. Push the repository to GitHub, GitLab, or Bitbucket.
-2. Open [vercel.com/new](https://vercel.com/new).
-3. Import the repository.
-4. Use these project settings:
-
-   | Setting | Value |
-   | --- | --- |
-   | Framework Preset | `Vite` |
-   | Install Command | `npm install` |
-   | Build Command | `npm run build` |
-   | Output Directory | `dist` |
-
-5. Click **Deploy**.
-
-No `vercel.json` or environment variables are required. The checked-in `public/mockServiceWorker.js` is copied into the production bundle, so the mocked ranking and history remain available after deployment.
-
-### Vercel CLI
-
-```bash
-npm install --global vercel
-vercel login
-vercel
-vercel --prod
-```
-
 ## Documentation
 
 - [ARCHITECTURE.md](ARCHITECTURE.md): React/PixiJS boundaries, simulation lifecycle, collisions, persistence, caching, and network recovery.
