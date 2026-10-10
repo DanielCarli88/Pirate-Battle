@@ -2,6 +2,9 @@
 
 Pirate Battle is a 2D top-down naval shooter built with React, TypeScript, and PixiJS. The player navigates an arena, avoids islands, fights Chaser and Shooter enemies, and submits completed match results to the local mocked ranking and match-history APIs.
 
+## Deploy
+https://pirate-battle-ecru.vercel.app/
+
 ## Features
 
 - PixiJS arena with water, islands, ships, projectiles, health bars, and combat feedback.
